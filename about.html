@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>О нас — Kamilovs’ Hotel</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <header class="top-header">
+        <div class="container">
+            <a href="index.html" target="_blank">
+                <img src="img/logo.png" class="logo" alt="Kamilovs’ Hotel">
+            </a>
+            <nav class="lang-phone">
+                <span>🌐 RU ▼</span>
+                <span id="show-phone-bt                    style=" margin-left: 18px; cursor:pointer; color:#002c78;
+                    font-weight:600;">Показать номер 📞</span>
+                <span id="phone-number" style="display:none; margin-left: 18px;">
+                    <a href="tel:+998950884141" style="color:#cc2579; text-decoration:none; font-weight:bold;">+998 95
+                        088 41 41</a>
+                </span>
+            </nav>
+            <a href="https://www.booking.com/hotel/uz/kamilovs.ru.html" target="_blank" style="text-decoration: none;">
+                <div class="book-now">🔔 Забронируйте сейчас ▼</div>
+            </a>
+        </div>
+        <nav class="bottom-nav">
+            <ul>
+                <li><a href="#">Вкус</a></li>
+                <li><a href="#">Спа</a></li>
+                <li><a href="#">Номера</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="about-container">
+        <div class="about-image">
+            <img src="img/hotel2.jpg" alt="Gural Premier" />
+        </div>
+        <div class="about-content">
+            <div class="about-breadcrumb">
+                <a href="index.html">Главная</a>
+                <span>|</span>
+                <span>О нас</span>
+            </div>
+            <div class="about-tabs">
+                <span class="about-tab active">Kamilovs’ Hotel</span>
+            </div>
+            <div class="about-title">ДОБРО ПОЖАЛОВАТЬ В Kamilovs’ Hote</div>
+            <hr class="about-divider" />
+            <div class="about-text">
+                <p>
+                    Добро пожаловать в Kamilovs’ Hotel — современный, уютный и гостеприимный отель, где сочетаются
+                    традиции восточного радушия и высокий стандарт сервиса. Наш отель идеально подойдёт как для деловых
+                    поездок, так и для семейного отдыха. Мы создаём атмосферу, в которую хочется возвращаться снова и
+                    снова.
+                </p>
+                <p>
+                    Kamilovs’ Hotel расположен в самом центре города — рядом с метро, рынками, главной пешеходной
+                    улицей, парком, а также множеством кафе, ресторанов и культурных объектов. Независимо от целей
+                    вашего визита, вы всегда окажетесь в центре событий.
+                </p>
+                <p>
+                    В отеле представлены номера разных категорий, оформленные в современном стиле с национальными
+                    элементами. Каждый номер оснащён кондиционером, бесплатным Wi-Fi, телевизором, удобными кроватями и
+                    всеми необходимыми удобствами для комфортного проживания. К вашим услугам — стандартные, комфортные
+                    и полулюксовые номера.
+                </p>
+                <p>
+                    Утром гостей ждёт вкусный завтрак «шведский стол» из свежих продуктов. В течение дня вы можете
+                    посетить уютное кафе или заказать блюда восточной и европейской кухни прямо в номер. Для деловых
+                    гостей есть бесплатный Wi-Fi, бизнес-центр, конференц-зал и услуги переводчика.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logo-row">
+                <img src="img/logo.png" alt="Kamilovs’ Hotel" class="footer-logo">
+            </div>
+            <div class="footer-social-center">
+                <div class="footer-links">
+                    <a href="#">КОНТАКТЫ</a>
+                    <span>|</span>
+                    <a href="#">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</a>
+                    <span>|</span>
+                    <a href="#">ПОДПИСКА НА ЭЛЕКТРОННЫЙ БЮЛЛЕТЕНЬ</a>
+                </div>
+                <div class="footer-phone">
+                    <span class="footer-phone-icon">📞</span>
+                    <span id="show-footer-phone-btn" style="cursor:pointer; color:#002c78; font-weight:600;">Показать
+                        номер</span>
+                    <span id="footer-phone-number" style="display:none; margin-left:10px;">
+                        <a href="tel:+998950884141" style="color:#cc2579; text-decoration:none; font-weight:bold;">+998
+                            95 088 41
+                            41</a>
+                    </span>
+                </div>
+
+                <div class="footer-socials">
+                    <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a href="https://t.me/kamilovhotel" target="_blank"><img src="img/telegram.png" alt="Telegram"></a>
+                    <a href="https://www.instagram.com/kamilovs_hotel?igsh=MXJzOWp1NGZhNHdhOA%3D%3D&utm_source=qr"
+                        target="_blank"><img src="img/insta.png" alt="Instagram"></a>
+                    <a href="https://wa.me/998950884141" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+            <div class="footer-copy-row">
+                <div class="footer-copy">
+                    © 2020 Kamilovs’ Hotel, Все права защищены.
+                </div>
+                <div class="footer-policy">
+                    <a href="#">Защита персональных данных</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+
+<script>
+    // Для показа номера по клику
+    document.getElementById('show-phone-btn').onclick = function () {
+        document.getElementById('phone-number').style.display = 'inline';
+        this.style.display = 'none';
+    }
+</script>
+
+<script>
+    // Для шапки (если еще нет)
+    if (document.getElementById('show-phone-btn'))
+        document.getElementById('show-phone-btn').onclick = function () {
+            document.getElementById('phone-number').style.display = 'inline';
+            this.style.display = 'none';
+        }
+
+    // Для футера
+    if (document.getElementById('show-footer-phone-btn'))
+        document.getElementById('show-footer-phone-btn').onclick = function () {
+            document.getElementById('footer-phone-number').style.display = 'inline';
+            this.style.display = 'none';
+        }
+</script>
+
+</html>
